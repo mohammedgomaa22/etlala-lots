@@ -249,6 +249,15 @@ ul {
 .header button a:hover i {
     transform: rotate(-90deg);
 }
+.header .phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--main-color);
+}
 /* -------------------- End Header -------------------- */
 /* -------------------- Start Navbar -------------------- */
 .navbar {
@@ -262,7 +271,7 @@ ul {
     position: relative;
 }
 .navbar .logo a {
-    width: 170px;
+    width: 70px;
     color: var(--h-color);
     font-size: 24px;
     font-weight: bold;
@@ -610,12 +619,6 @@ ul {
 }
 .footer .links .whatsapp:hover {
     background-color: #128c7e;
-}
-.footer .links .facebook:hover {
-    background-color: #1877f2;
-}
-.footer .links .instagram:hover {
-    background-color: #e1306c;
 }
 .footer .links a i {
     font-size: 24px;
