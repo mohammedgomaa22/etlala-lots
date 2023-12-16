@@ -206,22 +206,52 @@ ul {
     align-items: center;
     text-align: center;
 }
+.header .imgs {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.header .imgs .image {
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(20% 5%, 80% 5%, 100% 50%, 80% 90%, 20% 90%, 0% 50%);
+    position: relative;
+}
+.header .imgs .image img:hover .image {
+    clip-path: polygon(0);
+}
+.header .imgs .image img {
+    width: 100%;
+    height: 100%;
+}
+
 .header .title-header,
 .header .title-header-info {
-    font-weight: 700;
+    max-width: 1000px;
+    margin: auto;
     color: white;
+    text-align: center;
+    font-weight: 700;
     line-height: var(--main-line-height);
 }
 .header .title-header {
-    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 33px;
+    margin-bottom: 0px;
 }
 .header .title-header-info {
-    margin-top: 0px;
-    font-size: 26px;
+    margin-bottom: 0px;
+    color: var(--third-background-color);
+    font-size: 22px;
+}
+.header .title-header-info .price {
+    color: var(--main-color);
 }
 .header .title-header span {
     color: var(--sec-color);
 }
+
 .header button {
     padding: 0;
     background-color: transparent;
@@ -253,7 +283,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 25px 0 0;
+    margin: 15px 0 0;
     font-size: 28px;
     font-weight: bold;
     color: white;
@@ -384,10 +414,31 @@ ul {
 .about {
     padding: var(--section-padding);
 }
+.about .title-header,
+.about .title-header-info {
+    max-width: 1000px;
+    margin: auto;
+    color: var(--h-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: var(--main-line-height);
+}
+.about .title-header {
+    margin-top: 50px;
+    margin-bottom: 7px;
+}
+.about .title-header-info {
+    margin-top: 0px;
+    font-size: 22px;
+}
+.about .title-header span {
+    color: var(--sec-color);
+}
 .about .boxes {
     display: grid;
     justify-content: center;
-    padding: 40px 10px;
+    padding: 0px 10px;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 .about .boxes .box {
